@@ -1,0 +1,35 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.openjfx:javafx-controls:17'
+    implementation 'org.openjfx:javafx-fxml:17'
+    implementation 'org.xerial:sqlite-jdbc:3.36.0.3' // SQLite
+    implementation 'org.apache.poi:poi:5.2.5'
+    implementation 'org.apache.poi:poi-ooxml:5.2.5'
+    implementation 'com.itextpdf:itextpdf:5.5.13.3'
+}
+
+javafx {
+    version = "17"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+application {
+    mainClass = 'com.zakatfitrah.App'
+}
+
+run {
+    jvmArgs = ['--module-path', 'path/to/javafx-sdk-17/lib', '--add-modules', 'javafx.controls,javafx.fxml']
+}
+
+jar {
+    from sourceSets.main.resources
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}

@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Launch Java Program",
+        "type": "java",
+        "request": "launch",
+        "mainClass": "com.zakatfitrah.App",
+        "projectName": "zakat-fitrah-app"
+      }
+    ]
+  }
+  

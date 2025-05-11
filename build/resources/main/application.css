@@ -1,0 +1,99 @@
+/* General */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #f9f9f9;
+}
+
+/* Header Title */
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 20px 0;
+    -fx-text-fill: #2c3e50;
+}
+
+/* Section Label */
+.section-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+/* Input Fields */
+.text-field, .date-picker {
+    -fx-pref-width: 250px;
+    -fx-padding: 8px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-font-size: 13px;
+}
+
+/* Button */
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px 16px;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* Specific Button Styling */
+.action-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px 16px;
+    -fx-font-size: 13px;
+}
+
+.action-button:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* Search Button */
+.search-button {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px 16px;
+}
+
+/* Table Styling */
+.table-view {
+    -fx-border-color: #ccc;
+    -fx-background-color: #ffffff;
+}
+
+.table-column {
+    -fx-alignment: CENTER_LEFT;
+}
+
+/* Form Area */
+.form-pane {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 20px;
+}
+
+/* Table Area */
+.table-pane {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 20px;
+}

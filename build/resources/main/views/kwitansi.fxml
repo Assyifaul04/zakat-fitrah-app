@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zakatfitrah.controllers.MainController" stylesheets="@application.css">
+    <children>
+        <VBox spacing="10" alignment="TOP_CENTER" layoutX="50" layoutY="30">
+            <Label text="Kwitansi Zakat Fitrah" styleClass="title-label"/>
+            <Label fx:id="namaLabel" text="Nama: "/>
+            <Label fx:id="alamatLabel" text="Alamat: "/>
+            <Label fx:id="jumlahAnggotaLabel" text="Jumlah Anggota: "/>
+            <Label fx:id="jenisZakatLabel" text="Jenis Zakat: "/>
+            <Label fx:id="nominalLabel" text="Jumlah Beras Dibawa: "/>
+
+            <Button text="Kembali" onAction="#tutupKwitansi"/>
+        </VBox>
+    </children>
+</AnchorPane>

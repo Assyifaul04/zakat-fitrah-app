@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.zakatfitrah.controllers.MainController"
+            stylesheets="@application.css">
+
+    <!-- Header -->
+    <top>
+        <HBox spacing="10" alignment="CENTER">
+            <ImageView fx:id="logo" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@/images/logo.png" />
+                </image>
+            </ImageView>
+            <Label text="Form Zakat Fitrah - Masjid Salafiyah"
+                styleClass="title-label"/>
+        </HBox>
+    </top>
+
+    <!-- Form Input -->
+    <left>
+        <VBox spacing="12" alignment="TOP_LEFT" styleClass="form-pane">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <Label text="Input Data Jamaah" styleClass="section-label"/>
+            <TextField fx:id="namaField" promptText="Nama"/>
+            <TextField fx:id="alamatField" promptText="Alamat"/>
+            <TextField fx:id="jumlahAnggotaField" promptText="Jumlah Anggota"/>
+            <TextField fx:id="jenisZakatField" promptText="Jenis Zakat (contoh: Beras)"/>
+            <TextField fx:id="nominalField" promptText="Jumlah Beras (kg)"/>
+            <DatePicker fx:id="tanggalPicker" promptText="Pilih Tanggal"/>
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Button text="Tambah" onAction="#tambahJamaah" styleClass="action-button"/>
+                <Button text="Reset" onAction="#clearForm" styleClass="action-button"/>
+                <Button fx:id="editButton" text="Edit" onAction="#editJamaah" styleClass="action-button"/>
+                <Button fx:id="deleteButton" text="Hapus" onAction="#hapusJamaah" styleClass="action-button"/>
+                <Button text="Export to Excel" onAction="#exportToExcel" styleClass="action-button"/>
+                <Button text="Export to PDF" onAction="#exportToPdf" styleClass="action-button"/>
+            </HBox>
+        </VBox>
+    </left>
+
+    <!-- Tabel dan Aksi -->
+    <center>
+        <VBox spacing="15" alignment="TOP_CENTER" styleClass="table-pane">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+        
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <TextField fx:id="searchField" promptText="Cari Nama atau Alamat"/>
+                <Button text="Cari" onAction="#cariJamaah" styleClass="search-button"/>
+            </HBox>
+        
+            <TableView fx:id="tableView" prefHeight="350" onMouseClicked="#isiFormDariTabel">
+                <columns>
+                    <TableColumn fx:id="idColumn" text="ID"/>
+                    <TableColumn fx:id="namaColumn" text="Nama" prefWidth="100"/>
+                    <TableColumn fx:id="alamatColumn" text="Alamat" prefWidth="100"/>
+                    <TableColumn fx:id="jumlahAnggotaColumn" text="Jumlah" prefWidth="80"/>
+                    <TableColumn fx:id="jenisZakatColumn" text="Jenis Zakat" prefWidth="100"/>
+                    <TableColumn fx:id="nominalColumn" text="Beras (kg)" prefWidth="100"/>
+                    <TableColumn fx:id="tanggalColumn" text="Tanggal" prefWidth="120"/>
+                </columns>
+            </TableView>
+        
+            <!-- Menggunakan HBox untuk tombol berjejer ke samping -->
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Button text="Cetak Kwitansi" onAction="#cetakKwitansi" styleClass="action-button"/>
+                <Button text="Import Excel" onAction="#importExcel" styleClass="action-button"/>
+            </HBox>
+        </VBox>
+    </center>
+
+</BorderPane>

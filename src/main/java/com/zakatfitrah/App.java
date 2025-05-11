@@ -1,0 +1,24 @@
+package com.zakatfitrah;
+
+import javafx.application.Application;
+import com.zakatfitrah.utils.DatabaseInitializer;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class App extends Application {
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        DatabaseInitializer.initializeDatabase();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/main.fxml"));
+        Scene scene = new Scene(loader.load());
+        stage.setTitle("Aplikasi Zakat Fitrah Masjid");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
