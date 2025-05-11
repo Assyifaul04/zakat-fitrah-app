@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.image.Image?>
 
@@ -11,20 +10,14 @@
 
     <!-- Header -->
     <top>
-        <HBox spacing="10" alignment="CENTER">
-            <ImageView fx:id="logo" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-                <image>
-                    <Image url="@/images/logo.png" />
-                </image>
-            </ImageView>
-            <Label text="Form Zakat Fitrah - Masjid Salafiyah"
-                styleClass="title-label"/>
+        <HBox spacing="15" alignment="CENTER" styleClass="header">
+            <Label text="Form Zakat Fitrah - Masjid Salafiyah" styleClass="title-label"/>
         </HBox>
     </top>
 
     <!-- Form Input -->
     <left>
-        <VBox spacing="12" alignment="TOP_LEFT" styleClass="form-pane">
+        <VBox spacing="15" alignment="TOP_LEFT" styleClass="form-pane">
             <padding>
                 <Insets top="20" right="20" bottom="20" left="20"/>
             </padding>
@@ -37,7 +30,7 @@
             <TextField fx:id="nominalField" promptText="Jumlah Beras (kg)"/>
             <DatePicker fx:id="tanggalPicker" promptText="Pilih Tanggal"/>
 
-            <HBox spacing="10" alignment="CENTER_LEFT">
+            <HBox spacing="15" alignment="CENTER_LEFT">
                 <Button text="Tambah" onAction="#tambahJamaah" styleClass="action-button"/>
                 <Button text="Reset" onAction="#clearForm" styleClass="action-button"/>
                 <Button fx:id="editButton" text="Edit" onAction="#editJamaah" styleClass="action-button"/>
@@ -50,12 +43,12 @@
 
     <!-- Tabel dan Aksi -->
     <center>
-        <VBox spacing="15" alignment="TOP_CENTER" styleClass="table-pane">
+        <VBox spacing="20" alignment="TOP_CENTER" styleClass="table-pane">
             <padding>
                 <Insets top="20" right="20" bottom="20" left="20"/>
             </padding>
         
-            <HBox spacing="10" alignment="CENTER_LEFT">
+            <HBox spacing="15" alignment="CENTER_LEFT">
                 <TextField fx:id="searchField" promptText="Cari Nama atau Alamat"/>
                 <Button text="Cari" onAction="#cariJamaah" styleClass="search-button"/>
             </HBox>
@@ -73,7 +66,7 @@
             </TableView>
         
             <!-- Menggunakan HBox untuk tombol berjejer ke samping -->
-            <HBox spacing="10" alignment="CENTER_LEFT">
+            <HBox spacing="15" alignment="CENTER_LEFT">
                 <Button text="Cetak Kwitansi" onAction="#cetakKwitansi" styleClass="action-button"/>
                 <Button text="Import Excel" onAction="#importExcel" styleClass="action-button"/>
             </HBox>

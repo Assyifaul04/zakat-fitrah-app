@@ -2,33 +2,40 @@
 .root {
     -fx-font-family: "Segoe UI", sans-serif;
     -fx-font-size: 14px;
-    -fx-background-color: #f9f9f9;
+    -fx-background-color: #f4f6f9;
 }
 
-/* Header Title */
+/* Header */
+.header {
+    -fx-background-color: #2c3e50;
+    -fx-padding: 20px;
+}
+
 .title-label {
     -fx-font-size: 24px;
     -fx-font-weight: bold;
-    -fx-padding: 20px 0;
-    -fx-text-fill: #2c3e50;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 4);
 }
 
 /* Section Label */
 .section-label {
     -fx-font-size: 16px;
     -fx-font-weight: bold;
-    -fx-text-fill: #2c3e50;
+    -fx-text-fill: #34495e;
+    -fx-padding: 10px 0;
 }
 
 /* Input Fields */
 .text-field, .date-picker {
-    -fx-pref-width: 250px;
-    -fx-padding: 8px;
+    -fx-pref-width: 280px;
+    -fx-padding: 10px;
     -fx-background-color: #ffffff;
-    -fx-border-color: #ddd;
-    -fx-border-radius: 4px;
-    -fx-background-radius: 4px;
-    -fx-font-size: 13px;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-font-size: 14px;
+    -fx-focus-color: #3498db;
 }
 
 /* Button */
@@ -36,9 +43,11 @@
     -fx-background-color: #3498db;
     -fx-text-fill: white;
     -fx-font-weight: bold;
-    -fx-background-radius: 5px;
-    -fx-border-radius: 5px;
-    -fx-padding: 8px 16px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0, 0, 4);
 }
 
 .button:hover {
@@ -50,10 +59,11 @@
     -fx-background-color: #3498db;
     -fx-text-fill: white;
     -fx-font-weight: bold;
-    -fx-background-radius: 5px;
-    -fx-border-radius: 5px;
-    -fx-padding: 8px 16px;
-    -fx-font-size: 13px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 3);
 }
 
 .action-button:hover {
@@ -65,35 +75,61 @@
     -fx-background-color: #2ecc71;
     -fx-text-fill: white;
     -fx-font-weight: bold;
-    -fx-background-radius: 5px;
-    -fx-border-radius: 5px;
-    -fx-padding: 8px 16px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
 }
 
 /* Table Styling */
 .table-view {
-    -fx-border-color: #ccc;
+    -fx-border-color: #ddd;
     -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 4);
 }
 
 .table-column {
     -fx-alignment: CENTER_LEFT;
+    -fx-font-size: 14px;
+}
+
+.table-column > .cell {
+    -fx-background-color: #f9f9f9;
 }
 
 /* Form Area */
 .form-pane {
     -fx-background-color: #ffffff;
     -fx-border-color: #ddd;
-    -fx-border-radius: 6px;
-    -fx-background-radius: 6px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
     -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 5);
 }
 
 /* Table Area */
 .table-pane {
     -fx-background-color: #ffffff;
     -fx-border-color: #ddd;
-    -fx-border-radius: 6px;
-    -fx-background-radius: 6px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
     -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 5);
+}
+
+/* Input Focus Effect */
+.text-field:focused, .date-picker:focused {
+    -fx-border-color: #3498db;
+    -fx-background-color: #ecf9ff;
+}
+
+/* Hover Effects for Table Rows */
+.table-row-cell:hover {
+    -fx-background-color: #f0f0f0;
+}
+
+/* Button Container */
+.hbox {
+    -fx-spacing: 15px;
+    -fx-alignment: center;
 }
