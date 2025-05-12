@@ -45,7 +45,7 @@ public class KwitansiPrinter {
             g2d.drawRect(x, y, columnWidth, 40);
             g2d.drawRect(x, y, 40, 40);
             try {
-                Image logo = ImageIO.read(new File("assets/logo.png"));
+                Image logo = ImageIO.read(KwitansiPrinter.class.getResourceAsStream("/assets/logo.png"));
                 g2d.drawImage(logo, x + 5, y + 5, 30, 30, null);
             } catch (Exception e) {
                 g2d.drawString("Logo", x + 10, y + 25);
@@ -140,7 +140,7 @@ public class KwitansiPrinter {
             System.out.println("✅ Kwitansi berhasil dicetak.");
         } catch (PrinterException e) {
             e.printStackTrace();
-            System.out.println("❌ Gagal mencetak kwitansi: " + e.getMessage());
+            System.out.println("Gagal mencetak kwitansi: " + e.getMessage());
         }
     }
 

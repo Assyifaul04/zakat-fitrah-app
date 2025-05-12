@@ -1,0 +1,83 @@
+
+
+Version:	3.50
+CmdLine:	D:\Java\zakat-fitrah-app\ZakatFitrahApp.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	D:\Java\zakat-fitrah-app\.
+Requires JDK:	Yes
+Requires 64-Bit: Yes
+Java min ver:	1.017.000
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\Java\jdk-17
+Substitute:	PATH = C:\xampp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\laragon\bin\php\php-8.3.13-Win32-vs16-x64;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\nodejs;C:\Program Files\Java\jdk-17\bin;D:\GO\bin;C:\laragon\bin;C:\laragon\bin\apache\httpd-2.4.54-win64-VS16\bin;C:\laragon\bin\composer;C:\laragon\bin\git\bin;C:\laragon\bin\git\cmd;C:\laragon\bin\git\mingw64\bin;C:\laragon\bin\git\usr\bin;C:\laragon\bin\laragon\utils;C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin;C:\laragon\bin\nginx\nginx-1.22.0;C:\laragon\bin\ngrok;C:\laragon\bin\nodejs\node-v20.18.0-win-x64;C:\laragon\bin\notepad++;C:\laragon\bin\php\php-8.3.13-Win32-vs16-x64;C:\laragon\bin\python\python-3.10;C:\laragon\bin\python\python-3.10\Scripts;C:\laragon\bin\redis\redis-x64-5.0.14.1;C:\laragon\bin\telnet;C:\laragon\usr\bin;C:\Users\acer\AppData\Local\Yarn\config\global\node_modules\.bin;C:\Users\acer\AppData\Roaming\Composer\vendor\bin;C:\Users\acer\AppData\Roaming\npm;C:\Users\acer\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\nvm;D:\download-zip\flutter_windows_3.29.2-stable\flutter\bin;D:\android-sdk\cmdline-tools\latest\bin;D:\android-sdk;C:\Program Files\Java\jdk-17\bin;D:\Microsoft VS Code\bin;C:\Users\acer\go\bin;D:\GO\bin;D:\gradle\gradle-7.3.3\bin;D:\download-zip\wix314-binaries;;C:\Program Files\Java\jdk-17\bin
+JRE paths:	C:\Program Files\Java\jdk-17;C:\xampp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\laragon\bin\php\php-8.3.13-Win32-vs16-x64;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\nodejs;C:\Program Files\Java\jdk-17\bin;D:\GO\bin;C:\laragon\bin;C:\laragon\bin\apache\httpd-2.4.54-win64-VS16\bin;C:\laragon\bin\composer;C:\laragon\bin\git\bin;C:\laragon\bin\git\cmd;C:\laragon\bin\git\mingw64\bin;C:\laragon\bin\git\usr\bin;C:\laragon\bin\laragon\utils;C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin;C:\laragon\bin\nginx\nginx-1.22.0;C:\laragon\bin\ngrok;C:\laragon\bin\nodejs\node-v20.18.0-win-x64;C:\laragon\bin\notepad++;C:\laragon\bin\php\php-8.3.13-Win32-vs16-x64;C:\laragon\bin\python\python-3.10;C:\laragon\bin\python\python-3.10\Scripts;C:\laragon\bin\redis\redis-x64-5.0.14.1;C:\laragon\bin\telnet;C:\laragon\usr\bin;C:\Users\acer\AppData\Local\Yarn\config\global\node_modules\.bin;C:\Users\acer\AppData\Roaming\Composer\vendor\bin;C:\Users\acer\AppData\Roaming\npm;C:\Users\acer\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\nvm;D:\download-zip\flutter_windows_3.29.2-stable\flutter\bin;D:\android-sdk\cmdline-tools\latest\bin;D:\android-sdk;C:\Program Files\Java\jdk-17\bin;D:\Microsoft VS Code\bin;C:\Users\acer\go\bin;D:\GO\bin;D:\gradle\gradle-7.3.3\bin;D:\download-zip\wix314-binaries;;C:\Program Files\Java\jdk-17\bin
+Check launcher:	C:\Program Files\Java\jdk-17\bin\javaw.exe (OK)
+Check javac:	C:\Program Files\Java\jdk-17\bin\javac.exe (OK)
+Version string: 1.017.000_012 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-17\bin\javaw.exe
+Launcher args:	--module-path "D:/download-zip/openjfx-17.0.15_windows-x64_bin-sdk/javafx-sdk-17.0.15/lib" --add-modules javafx.controls,javafx.fxml -jar "D:\Java\zakat-fitrah-app\ZakatFitrahApp.exe" --module-path "D:\download-zip\openjfx-17.0.15_windows-x64_bin-sdk\javafx-sdk-17.0.15\lib" --add-modules javafx.controls,javafx.fxml 
+Args length:	317/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	D:\Java\zakat-fitrah-app\ZakatFitrahApp.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	D:\Java\zakat-fitrah-app\.
+Requires JDK:	Yes
+Requires 64-Bit: Yes
+Java min ver:	1.017.000
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\Java\jdk-17
+Substitute:	PATH = C:\xampp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\laragon\bin\php\php-8.3.13-Win32-vs16-x64;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\nodejs;C:\Program Files\Java\jdk-17\bin;D:\GO\bin;C:\laragon\bin;C:\laragon\bin\apache\httpd-2.4.54-win64-VS16\bin;C:\laragon\bin\composer;C:\laragon\bin\git\bin;C:\laragon\bin\git\cmd;C:\laragon\bin\git\mingw64\bin;C:\laragon\bin\git\usr\bin;C:\laragon\bin\laragon\utils;C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin;C:\laragon\bin\nginx\nginx-1.22.0;C:\laragon\bin\ngrok;C:\laragon\bin\nodejs\node-v20.18.0-win-x64;C:\laragon\bin\notepad++;C:\laragon\bin\php\php-8.3.13-Win32-vs16-x64;C:\laragon\bin\python\python-3.10;C:\laragon\bin\python\python-3.10\Scripts;C:\laragon\bin\redis\redis-x64-5.0.14.1;C:\laragon\bin\telnet;C:\laragon\usr\bin;C:\Users\acer\AppData\Local\Yarn\config\global\node_modules\.bin;C:\Users\acer\AppData\Roaming\Composer\vendor\bin;C:\Users\acer\AppData\Roaming\npm;C:\Users\acer\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\nvm;D:\download-zip\flutter_windows_3.29.2-stable\flutter\bin;D:\android-sdk\cmdline-tools\latest\bin;D:\android-sdk;C:\Program Files\Java\jdk-17\bin;D:\Microsoft VS Code\bin;C:\Users\acer\go\bin;D:\GO\bin;D:\gradle\gradle-7.3.3\bin;D:\download-zip\wix314-binaries;;C:\Program Files\Java\jdk-17\bin
+JRE paths:	C:\Program Files\Java\jdk-17;C:\xampp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\laragon\bin\php\php-8.3.13-Win32-vs16-x64;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\nodejs;C:\Program Files\Java\jdk-17\bin;D:\GO\bin;C:\laragon\bin;C:\laragon\bin\apache\httpd-2.4.54-win64-VS16\bin;C:\laragon\bin\composer;C:\laragon\bin\git\bin;C:\laragon\bin\git\cmd;C:\laragon\bin\git\mingw64\bin;C:\laragon\bin\git\usr\bin;C:\laragon\bin\laragon\utils;C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin;C:\laragon\bin\nginx\nginx-1.22.0;C:\laragon\bin\ngrok;C:\laragon\bin\nodejs\node-v20.18.0-win-x64;C:\laragon\bin\notepad++;C:\laragon\bin\php\php-8.3.13-Win32-vs16-x64;C:\laragon\bin\python\python-3.10;C:\laragon\bin\python\python-3.10\Scripts;C:\laragon\bin\redis\redis-x64-5.0.14.1;C:\laragon\bin\telnet;C:\laragon\usr\bin;C:\Users\acer\AppData\Local\Yarn\config\global\node_modules\.bin;C:\Users\acer\AppData\Roaming\Composer\vendor\bin;C:\Users\acer\AppData\Roaming\npm;C:\Users\acer\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\nvm;D:\download-zip\flutter_windows_3.29.2-stable\flutter\bin;D:\android-sdk\cmdline-tools\latest\bin;D:\android-sdk;C:\Program Files\Java\jdk-17\bin;D:\Microsoft VS Code\bin;C:\Users\acer\go\bin;D:\GO\bin;D:\gradle\gradle-7.3.3\bin;D:\download-zip\wix314-binaries;;C:\Program Files\Java\jdk-17\bin
+Check launcher:	C:\Program Files\Java\jdk-17\bin\javaw.exe (OK)
+Check javac:	C:\Program Files\Java\jdk-17\bin\javac.exe (OK)
+Version string: 1.017.000_012 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-17\bin\javaw.exe
+Launcher args:	--module-path "D:\download-zip\openjfx-17.0.15_windows-x64_bin-sdk\javafx-sdk-17.0.15\lib" --add-modules javafx.controls,javafx.fxml -jar "D:\Java\zakat-fitrah-app\ZakatFitrahApp.exe" --module-path "D:\download-zip\openjfx-17.0.15_windows-x64_bin-sdk\javafx-sdk-17.0.15\lib" --add-modules javafx.controls,javafx.fxml 
+Args length:	317/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	D:\Java\zakat-fitrah-app\ZakatFitrahApp.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	D:\Java\zakat-fitrah-app\.
+Requires JDK:	Yes
+Requires 64-Bit: Yes
+Java min ver:	1.017.000
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\Java\jdk-17
+Substitute:	PATH = C:\xampp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\laragon\bin\php\php-8.3.13-Win32-vs16-x64;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\nodejs;C:\Program Files\Java\jdk-17\bin;D:\GO\bin;C:\laragon\bin;C:\laragon\bin\apache\httpd-2.4.54-win64-VS16\bin;C:\laragon\bin\composer;C:\laragon\bin\git\bin;C:\laragon\bin\git\cmd;C:\laragon\bin\git\mingw64\bin;C:\laragon\bin\git\usr\bin;C:\laragon\bin\laragon\utils;C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin;C:\laragon\bin\nginx\nginx-1.22.0;C:\laragon\bin\ngrok;C:\laragon\bin\nodejs\node-v20.18.0-win-x64;C:\laragon\bin\notepad++;C:\laragon\bin\php\php-8.3.13-Win32-vs16-x64;C:\laragon\bin\python\python-3.10;C:\laragon\bin\python\python-3.10\Scripts;C:\laragon\bin\redis\redis-x64-5.0.14.1;C:\laragon\bin\telnet;C:\laragon\usr\bin;C:\Users\acer\AppData\Local\Yarn\config\global\node_modules\.bin;C:\Users\acer\AppData\Roaming\Composer\vendor\bin;C:\Users\acer\AppData\Roaming\npm;C:\Users\acer\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\nvm;D:\download-zip\flutter_windows_3.29.2-stable\flutter\bin;D:\android-sdk\cmdline-tools\latest\bin;D:\android-sdk;C:\Program Files\Java\jdk-17\bin;D:\Microsoft VS Code\bin;C:\Users\acer\go\bin;D:\GO\bin;D:\gradle\gradle-7.3.3\bin;D:\download-zip\wix314-binaries;;C:\Program Files\Java\jdk-17\bin
+JRE paths:	C:\Program Files\Java\jdk-17;C:\xampp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\laragon\bin\php\php-8.3.13-Win32-vs16-x64;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\nodejs;C:\Program Files\Java\jdk-17\bin;D:\GO\bin;C:\laragon\bin;C:\laragon\bin\apache\httpd-2.4.54-win64-VS16\bin;C:\laragon\bin\composer;C:\laragon\bin\git\bin;C:\laragon\bin\git\cmd;C:\laragon\bin\git\mingw64\bin;C:\laragon\bin\git\usr\bin;C:\laragon\bin\laragon\utils;C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin;C:\laragon\bin\nginx\nginx-1.22.0;C:\laragon\bin\ngrok;C:\laragon\bin\nodejs\node-v20.18.0-win-x64;C:\laragon\bin\notepad++;C:\laragon\bin\php\php-8.3.13-Win32-vs16-x64;C:\laragon\bin\python\python-3.10;C:\laragon\bin\python\python-3.10\Scripts;C:\laragon\bin\redis\redis-x64-5.0.14.1;C:\laragon\bin\telnet;C:\laragon\usr\bin;C:\Users\acer\AppData\Local\Yarn\config\global\node_modules\.bin;C:\Users\acer\AppData\Roaming\Composer\vendor\bin;C:\Users\acer\AppData\Roaming\npm;C:\Users\acer\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\nvm;D:\download-zip\flutter_windows_3.29.2-stable\flutter\bin;D:\android-sdk\cmdline-tools\latest\bin;D:\android-sdk;C:\Program Files\Java\jdk-17\bin;D:\Microsoft VS Code\bin;C:\Users\acer\go\bin;D:\GO\bin;D:\gradle\gradle-7.3.3\bin;D:\download-zip\wix314-binaries;;C:\Program Files\Java\jdk-17\bin
+Check launcher:	C:\Program Files\Java\jdk-17\bin\javaw.exe (OK)
+Check javac:	C:\Program Files\Java\jdk-17\bin\javac.exe (OK)
+Version string: 1.017.000_012 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-17\bin\javaw.exe
+Launcher args:	--module-path "D:\download-zip\openjfx-17.0.15_windows-x64_bin-sdk\javafx-sdk-17.0.15\lib" --add-modules javafx.controls,javafx.fxml -jar "D:\Java\zakat-fitrah-app\ZakatFitrahApp.exe" --module-path "D:\download-zip\openjfx-17.0.15_windows-x64_bin-sdk\javafx-sdk-17.0.15\lib" --add-modules javafx.controls,javafx.fxml 
+Args length:	317/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	D:\Java\zakat-fitrah-app\ZakatFitrahApp.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	D:\Java\zakat-fitrah-app\.
+Requires JDK:	No
+Requires 64-Bit: Yes
+Java min ver:	1.017.000
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\Java\jdk-17
+Substitute:	PATH = C:\xampp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\laragon\bin\php\php-8.3.13-Win32-vs16-x64;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\nodejs;C:\Program Files\Java\jdk-17\bin;D:\GO\bin;C:\laragon\bin;C:\laragon\bin\apache\httpd-2.4.54-win64-VS16\bin;C:\laragon\bin\composer;C:\laragon\bin\git\bin;C:\laragon\bin\git\cmd;C:\laragon\bin\git\mingw64\bin;C:\laragon\bin\git\usr\bin;C:\laragon\bin\laragon\utils;C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin;C:\laragon\bin\nginx\nginx-1.22.0;C:\laragon\bin\ngrok;C:\laragon\bin\nodejs\node-v20.18.0-win-x64;C:\laragon\bin\notepad++;C:\laragon\bin\php\php-8.3.13-Win32-vs16-x64;C:\laragon\bin\python\python-3.10;C:\laragon\bin\python\python-3.10\Scripts;C:\laragon\bin\redis\redis-x64-5.0.14.1;C:\laragon\bin\telnet;C:\laragon\usr\bin;C:\Users\acer\AppData\Local\Yarn\config\global\node_modules\.bin;C:\Users\acer\AppData\Roaming\Composer\vendor\bin;C:\Users\acer\AppData\Roaming\npm;C:\Users\acer\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\nvm;D:\download-zip\flutter_windows_3.29.2-stable\flutter\bin;D:\android-sdk\cmdline-tools\latest\bin;D:\android-sdk;C:\Program Files\Java\jdk-17\bin;D:\Microsoft VS Code\bin;C:\Users\acer\go\bin;D:\GO\bin;D:\gradle\gradle-7.3.3\bin;D:\download-zip\wix314-binaries;;C:\Program Files\Java\jdk-17\bin
+JRE paths:	C:\Program Files\Java\jdk-17;C:\xampp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\laragon\bin\php\php-8.3.13-Win32-vs16-x64;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\nodejs;C:\Program Files\Java\jdk-17\bin;D:\GO\bin;C:\laragon\bin;C:\laragon\bin\apache\httpd-2.4.54-win64-VS16\bin;C:\laragon\bin\composer;C:\laragon\bin\git\bin;C:\laragon\bin\git\cmd;C:\laragon\bin\git\mingw64\bin;C:\laragon\bin\git\usr\bin;C:\laragon\bin\laragon\utils;C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin;C:\laragon\bin\nginx\nginx-1.22.0;C:\laragon\bin\ngrok;C:\laragon\bin\nodejs\node-v20.18.0-win-x64;C:\laragon\bin\notepad++;C:\laragon\bin\php\php-8.3.13-Win32-vs16-x64;C:\laragon\bin\python\python-3.10;C:\laragon\bin\python\python-3.10\Scripts;C:\laragon\bin\redis\redis-x64-5.0.14.1;C:\laragon\bin\telnet;C:\laragon\usr\bin;C:\Users\acer\AppData\Local\Yarn\config\global\node_modules\.bin;C:\Users\acer\AppData\Roaming\Composer\vendor\bin;C:\Users\acer\AppData\Roaming\npm;C:\Users\acer\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\acer\AppData\Local\nvm;D:\download-zip\flutter_windows_3.29.2-stable\flutter\bin;D:\android-sdk\cmdline-tools\latest\bin;D:\android-sdk;C:\Program Files\Java\jdk-17\bin;D:\Microsoft VS Code\bin;C:\Users\acer\go\bin;D:\GO\bin;D:\gradle\gradle-7.3.3\bin;D:\download-zip\wix314-binaries;;C:\Program Files\Java\jdk-17\bin
+Check launcher:	C:\Program Files\Java\jdk-17\bin\javaw.exe (OK)
+Version string: 1.017.000_012 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-17\bin\javaw.exe
+Launcher args:	--module-path "D:/download-zip/openjfx-17.0.15_windows-x64_bin-sdk/javafx-sdk-17.0.15/lib" --add-modules javafx.controls,javafx.fxml -jar "D:\Java\zakat-fitrah-app\ZakatFitrahApp.exe" --module-path "D:\download-zip\openjfx-17.0.15_windows-x64_bin-sdk\javafx-sdk-17.0.15\lib" --add-modules javafx.controls,javafx.fxml 
+Args length:	317/32768 chars
+Exit code:	0

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>D:\Java\zakat-fitrah-app\build\libs\zakatfitrah-app-1.0.0-all.jar</jar>
+  <outfile>D:\Java\zakat-fitrah-app\ZakatFitrahApp.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine>--module-path &quot;D:\download-zip\openjfx-17.0.15_windows-x64_bin-sdk\javafx-sdk-17.0.15\lib&quot; --add-modules javafx.controls,javafx.fxml </cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>D:\Java\zakat-fitrah-app\logo.ico</icon>
+  <jre>
+    <path>%JAVA_HOME%;%PATH%</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>true</requires64Bit>
+    <minVersion>17</minVersion>
+    <maxVersion></maxVersion>
+    <opt>--module-path &quot;D:/download-zip/openjfx-17.0.15_windows-x64_bin-sdk/javafx-sdk-17.0.15/lib&quot; --add-modules javafx.controls,javafx.fxml</opt>
+  </jre>
+</launch4jConfig>

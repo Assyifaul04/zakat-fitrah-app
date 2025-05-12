@@ -34,11 +34,15 @@ shadowJar {
         attributes 'Main-Class': 'com.zakatfitrah.App'
     }
     dependencies {
+        // Pastikan semua dependensi yang dibutuhkan termasuk di dalam fat JAR
         include(dependency('org.openjfx:javafx-controls:17'))
         include(dependency('org.openjfx:javafx-fxml:17'))
+        include(dependency('org.xerial:sqlite-jdbc:3.36.0.3')) // SQLite JDBC
+        include(dependency('org.apache.poi:poi:5.2.5')) // Apache POI
+        include(dependency('org.apache.poi:poi-ooxml:5.2.5')) // Apache POI OOXML
+        include(dependency('com.itextpdf:itextpdf:5.5.13.3')) // iTextPDF
     }
 }
-
 
 jar {
     from sourceSets.main.resources
