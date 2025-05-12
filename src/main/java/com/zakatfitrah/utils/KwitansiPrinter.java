@@ -12,13 +12,19 @@ public class KwitansiPrinter {
         PrinterJob printerJob = PrinterJob.getPrinterJob();
         printerJob.setJobName("Kwitansi Zakat Fitrah");
 
-        // Menyesuaikan ukuran kertas dengan ukuran KTP (90mm x 60mm)
         PageFormat pageFormat = printerJob.defaultPage();
         Paper paper = new Paper();
-        double width = 90 * 2.83465;  // 90mm in points
-        double height = 60 * 2.83465; // 60mm in points
+
+        double widthMM = 105;
+        double heightMM = 297.0 / 3;
+
+        double width = widthMM * 2.83465; // mm to pixels
+        double height = heightMM * 2.83465;
+
         paper.setSize(width, height);
-        paper.setImageableArea(10, 10, width - 20, height - 20); // Margin 10 points
+
+        // Ubah area yang bisa dicetak agar semua area bisa dicetak
+        paper.setImageableArea(2, 2, width - 5, height - 5);  // margin 5px dari tepi
         pageFormat.setPaper(paper);
 
         printerJob.setPrintable((graphics, pf, pageIndex) -> {
@@ -29,66 +35,55 @@ public class KwitansiPrinter {
 
             int x = 10;
             int y = 10;
-            int lineHeight = 15;
-            int columnWidth = 270;
+            int lineHeight = 10;
+            int maxRight = (int) (pf.getImageableWidth());
+            int columnWidth = maxRight - x - 10;
 
             g2d.setFont(new Font("Monospaced", Font.PLAIN, 9));
 
-            // === HEADER: Logo and Info ===
+            // Header logo
             g2d.drawRect(x, y, columnWidth, 40);
-            g2d.drawRect(x, y, 50, 40); // Logo box
+            g2d.drawRect(x, y, 40, 40);
             try {
                 Image logo = ImageIO.read(new File("assets/logo.png"));
-                g2d.drawImage(logo, x + 5, y + 5, 40, 30, null);
+                g2d.drawImage(logo, x + 5, y + 5, 30, 30, null);
             } catch (Exception e) {
                 g2d.drawString("Logo", x + 10, y + 25);
             }
 
-            // Center text
-            Font headerFont = new Font("Monospaced", Font.BOLD, 10);
+            Font headerFont = new Font("Monospaced", Font.BOLD, 9);
             g2d.setFont(headerFont);
-            
-            int centerX = x + 50 + (columnWidth - 50) / 2;
-            
-            // Calculate text widths for centering
+
+            int centerX = x + 40 + (columnWidth - 40) / 2;
             FontMetrics fm = g2d.getFontMetrics();
             String line1 = "MASJID SALAFIYAH";
             String line2 = "LANGON ANDONGSARI AMBULU";
             String line3 = "Kabupaten Jember";
-            
-            int text1Width = fm.stringWidth(line1);
-            int text2Width = fm.stringWidth(line2);
-            int text3Width = fm.stringWidth(line3);
-            
-            g2d.drawString(line1, centerX - text1Width/2, y + 12);
-            g2d.drawString(line2, centerX - text2Width/2, y + 24);
-            g2d.setFont(new Font("Monospaced", Font.PLAIN, 9));
-            g2d.drawString(line3, centerX - text3Width/2, y + 36);
 
-            // === Title Kwitansi ===
-            y += 50;
-            g2d.setFont(new Font("Monospaced", Font.BOLD, 10));
+            g2d.drawString(line1, centerX - fm.stringWidth(line1) / 2, y + 12);
+            g2d.drawString(line2, centerX - fm.stringWidth(line2) / 2, y + 24);
+            g2d.setFont(new Font("Monospaced", Font.PLAIN, 8));
+            g2d.drawString(line3, centerX - g2d.getFontMetrics().stringWidth(line3) / 2, y + 36);
+
+            // Title
+            y += 45;
+            g2d.setFont(new Font("Monospaced", Font.BOLD, 8));
             String title = "=== kwitansi zakat fitrah ===";
             int titleWidth = g2d.getFontMetrics().stringWidth(title);
             g2d.drawString(title, x + (columnWidth / 2) - (titleWidth / 2), y);
-            
-            // Underline "kwitansi zakat fitrah"
             int startUnderline = x + (columnWidth / 2) - (titleWidth / 2) + g2d.getFontMetrics().stringWidth("=== ");
             int endUnderline = startUnderline + g2d.getFontMetrics().stringWidth("kwitansi zakat fitrah");
             g2d.drawLine(startUnderline, y + 2, endUnderline, y + 2);
 
-            // === Informasi Jamaah ===
             y += 20;
-            g2d.setFont(new Font("Monospaced", Font.PLAIN, 9));
-            
-            // Left column
+            g2d.setFont(new Font("Monospaced", Font.PLAIN, 8));
+
+            // Informasi Jamaah
             g2d.drawString("Nomor", x, y);
             g2d.drawString(":", x + 80, y);
             g2d.drawString(String.valueOf(jamaah.getId()), x + 90, y);
-            
-            // Right column
-            g2d.drawString("tanggal:", x + 160, y);
-            g2d.drawString(getSafe(jamaah.tanggalProperty()), x + 210, y);
+            g2d.drawString("Tanggal:", x + columnWidth - 100, y);
+            g2d.drawString(getSafe(jamaah.tanggalProperty()), x + columnWidth - 60, y);
 
             y += lineHeight;
             g2d.drawString("Nama", x, y);
@@ -105,7 +100,6 @@ public class KwitansiPrinter {
             g2d.drawString(":", x + 80, y);
             g2d.drawString(String.valueOf(jamaah.jumlahAnggotaProperty().get()), x + 90, y);
 
-            // === Detail Zakat ===
             double zakat = jamaah.jumlahAnggotaProperty().get() * 2.5;
             double total = jamaah.nominalProperty().get();
             double infaq = Math.max(total - zakat, 0);
@@ -116,34 +110,30 @@ public class KwitansiPrinter {
             g2d.drawString(String.format("%.1f kg", zakat), x + 90, y);
 
             y += lineHeight;
-            g2d.drawString("Infaq ( lebih )", x, y);
+            g2d.drawString("Infaq (lebih)", x, y);
             g2d.drawString(":", x + 80, y);
             g2d.drawString(String.format("%.1f kg", infaq), x + 90, y);
-            
+
             y += lineHeight;
             g2d.drawString("Total beras", x, y);
             g2d.drawString(":", x + 80, y);
             g2d.drawString(String.format("%.1f kg", total), x + 90, y);
-            
-            // === Tanda Tangan (sejajar dengan Total beras) ===
-            int ttdY = y; // posisi y sama dengan baris "Total beras"
-            
-            // Tulisan "Pengasuh," di atas tanda tangan
-            g2d.drawString("Pengasuh,", x + 200, ttdY - 30);
-            
-            // Nama dengan garis bawah
-            String namaPengasuh = "Muji Slamet";
-            g2d.drawString(namaPengasuh, x + 200, ttdY);
-            g2d.drawLine(x + 200, ttdY + 2, x + 200 + g2d.getFontMetrics().stringWidth(namaPengasuh), ttdY + 2);
 
-            // Terbilang (lanjutan)
+            // Tanda tangan
+            int ttdY = y;
+            g2d.drawString("Ketua Amil,", x + columnWidth - 60, ttdY - 30);
+            String namaPengasuh = "Muji Slamet";
+            g2d.drawString(namaPengasuh, x + columnWidth - 60, ttdY);
+            g2d.drawLine(x + columnWidth - 60, ttdY + 2, x + columnWidth - 60 + g2d.getFontMetrics().stringWidth(namaPengasuh), ttdY + 2);
+
+            // Terbilang
             y += lineHeight;
             g2d.drawString("Terbilang", x, y);
             g2d.drawString(":", x + 80, y);
             g2d.drawString(terbilang(total) + " Kilogram", x + 90, y);
 
             return Printable.PAGE_EXISTS;
-        });
+        }, pageFormat);
 
         try {
             printerJob.print();
